@@ -2,7 +2,7 @@
 
 buildscript {
     ext {
-        buildToolsVersion = findProperty('android.buildToolsVersion') ?: '33.0.0'
+        buildToolsVersion = findProperty('android.buildToolsVersion') ?: '3.8.1'
         minSdkVersion = Integer.parseInt(findProperty('android.minSdkVersion') ?: '21')
         compileSdkVersion = Integer.parseInt(findProperty('android.compileSdkVersion') ?: '33')
         targetSdkVersion = Integer.parseInt(findProperty('android.targetSdkVersion') ?: '33')
@@ -17,6 +17,7 @@ buildscript {
     repositories {
         google()
         mavenCentral()
+        maven { url 'https://maven.google.com' }
     }
     dependencies {
         classpath('com.android.tools.build:gradle:7.4.1')

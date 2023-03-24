@@ -5,7 +5,13 @@
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "ffe91972-9a38-4106-b54d-6b76ecde0edb"
+      }
+    },
+    "owner": "oxygene1"
   },
   "name": "myreactproj"
 }
